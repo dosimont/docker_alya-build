@@ -1,5 +1,5 @@
 FROM fedora:30
-RUN dnf -y install cmake gcc gcc-c++ git make perl wget
+RUN dnf -y install cmake gcc gcc-c++ gfortran git make perl wget
 RUN mkdir -p /sources
 RUN cd /sources &&\
     wget https://download.open-mpi.org/release/open-mpi/v3.1/openmpi-3.1.6.tar.gz &&\
