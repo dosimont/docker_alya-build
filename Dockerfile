@@ -12,4 +12,5 @@ RUN cd /sources &&\
     make install &&\
     cd / &&\
     rm -fr /sources/openmpi*
-RUN export PATH="/usr/local/bin:${PATH}" 
+RUN export PATH="/usr/local/bin:${PATH}"
+RUN git config --global http.postBuffer 524288000
